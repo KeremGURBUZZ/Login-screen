@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş / Kayıt Formu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Login Form-->
+        <div class="form-box login">
+            <form action="#">
+                <h1>Giriş Yap</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Kullanıcı Adı" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Şifre" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Şifremi Unuttum</a>
+                </div>
+                <button type="submit" class="btn">Giriş Yap</button>
+                <p>veya sosyal platformlarla giriş yap</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!--Register Form -->
+        <div class="form-box register">
+            <form action="#">
+                <h1>Kayıt Ol</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Kullanıcı Adı" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="E-posta" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Şifre" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Kayıt Ol</button>
+                <p>veya sosyal platformlarla kayıt ol</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!--Toggle Box -->
+        <div class="toggle-box"></div>
+
+        <!--Toggle Box Left-->
+        <div class="toggle-panel toggle-left">
+            <h1>Merhaba, Hoş Geldin!</h1>
+            <p>Hesabın yok mu?</p>
+            <button class="btn register-btn">Kayıt Ol</button>
+        </div>
+
+        <!--Toggle Box Right-->
+        <div class="toggle-panel toggle-right">
+            <h1>Tekrar Hoş Geldin!</h1>
+            <p>Zaten bir hesabın var mı?</p>
+            <button class="btn login-btn">Giriş Yap</button>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
